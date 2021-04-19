@@ -196,6 +196,7 @@ class _HomeState extends State<Home> {
             ),
             duration: Duration(seconds: 3), //Quanto tempo a barra será exibida
           );
+          Scaffold.of(context).removeCurrentSnackBar();//remove a snackbark para evitar o stackmento
           Scaffold.of(context).showSnackBar(snack); //Mostra a snackbar
         });
       },
